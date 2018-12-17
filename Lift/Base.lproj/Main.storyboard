@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,90 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvu-5b-m5o">
+                                <rect key="frame" x="100" y="593" width="30" height="40"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="0"/>
+                                <connections>
+                                    <action selector="button0Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1rR-fd-zAv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pt9-xY-Klu">
+                                <rect key="frame" x="100" y="313" width="30" height="40"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="2"/>
+                                <connections>
+                                    <action selector="button2Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2YV-ty-I4f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WsI-Lz-OVV">
+                                <rect key="frame" x="100" y="453" width="30" height="40"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="button1Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GoZ-Ev-trj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7p4-sj-NL4">
+                                <rect key="frame" x="100" y="173" width="30" height="40"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="3"/>
+                                <connections>
+                                    <action selector="button3Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JiJ-3x-lYI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oK-fV-3RL">
+                                <rect key="frame" x="100" y="33" width="30" height="40"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="4"/>
+                                <connections>
+                                    <action selector="button4Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IRr-9e-W2e"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lift" translatesAutoresizingMaskIntoConstraints="NO" id="AgN-VZ-6MS">
+                                <rect key="frame" x="262" y="571" width="98" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="Gg3-zg-6CQ"/>
+                                    <constraint firstAttribute="height" constant="85" id="Qa4-4S-zPd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WsI-Lz-OVV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="926-hU-QOw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AgN-VZ-6MS" secondAttribute="trailing" constant="15" id="9w8-Tt-oYz"/>
+                            <constraint firstItem="rvu-5b-m5o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="BEw-1I-2rc"/>
+                            <constraint firstItem="rvu-5b-m5o" firstAttribute="top" secondItem="WsI-Lz-OVV" secondAttribute="bottom" constant="100" id="Qct-rl-i4F"/>
+                            <constraint firstItem="7p4-sj-NL4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="XXj-VJ-ftL"/>
+                            <constraint firstItem="pt9-xY-Klu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="ZH8-tk-GWm"/>
+                            <constraint firstItem="WsI-Lz-OVV" firstAttribute="leading" secondItem="8oK-fV-3RL" secondAttribute="leading" id="epN-mx-KPy"/>
+                            <constraint firstItem="AgN-VZ-6MS" firstAttribute="centerY" secondItem="rvu-5b-m5o" secondAttribute="centerY" id="ljv-bN-nx1"/>
+                            <constraint firstItem="rvu-5b-m5o" firstAttribute="leading" secondItem="8oK-fV-3RL" secondAttribute="leading" id="mCY-WB-de9"/>
+                            <constraint firstItem="WsI-Lz-OVV" firstAttribute="top" secondItem="pt9-xY-Klu" secondAttribute="bottom" constant="100" id="oTr-rJ-Ecd"/>
+                            <constraint firstItem="7p4-sj-NL4" firstAttribute="top" secondItem="8oK-fV-3RL" secondAttribute="bottom" constant="100" id="oyb-M4-g6h"/>
+                            <constraint firstItem="pt9-xY-Klu" firstAttribute="leading" secondItem="8oK-fV-3RL" secondAttribute="leading" id="paQ-Ag-qWq"/>
+                            <constraint firstItem="pt9-xY-Klu" firstAttribute="top" secondItem="7p4-sj-NL4" secondAttribute="bottom" constant="100" id="pkR-bc-str"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rvu-5b-m5o" secondAttribute="bottom" constant="34" id="s7x-GB-86h"/>
+                            <constraint firstItem="8oK-fV-3RL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="sse-NV-PTG"/>
+                            <constraint firstItem="7p4-sj-NL4" firstAttribute="leading" secondItem="8oK-fV-3RL" secondAttribute="leading" id="tbW-8d-vSv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="animatedLiftImg" destination="AgN-VZ-6MS" id="GlC-cM-fAD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lift" width="128" height="128"/>
+    </resources>
 </document>
